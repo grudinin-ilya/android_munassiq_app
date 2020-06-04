@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="380dp">
+
+    <ImageView
+        android:id="@+id/imageBtn"
+        android:layout_width="80dp"
+        android:layout_height="80dp"
+        android:layout_marginLeft="50dp"
+        android:layout_marginTop="30dp"
+        android:scaleType="fitCenter"
+        app:srcCompat="@drawable/cogwheels" />
+
+    <TextView
+        android:id="@+id/nameBtn"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="30dp"
+        android:layout_marginTop="50dp"
+        android:layout_toRightOf="@id/imageBtn"
+        android:text="btn"
+        android:textSize="24sp"
+        android:textColor="@color/colorText"
+        android:gravity="left"/>
+
+    <TextView
+        android:id="@+id/descBtn"
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:layout_below="@id/nameBtn"
+        android:layout_marginLeft="30dp"
+        android:paddingRight="20dp"
+        android:text="TextView"
+        android:textSize="20sp"
+        android:gravity="center"
+        android:lineSpacingExtra="5dp"
+        android:textColor="@color/colorText"/>
+
+</RelativeLayout>

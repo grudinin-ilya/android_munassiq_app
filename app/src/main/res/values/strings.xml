@@ -1,0 +1,19 @@
+<resources>
+        <string name="app_name">MUNASSIQ</string>
+        <string name="descBtnDo">خانة جنب هذا الزر خاصة لإدخال رقم الوحدة. الوِحَد قبل العاشرة تكتب مع الصفر قبل رقم الوحدة. مثلا: الوحدة الأولى تكتب 01. بعد ضغط على الزر يتم اختيار اسم الطالب من صندوق التحرير أدناه.</string>
+        <string name="descBtnShow">إذا ترغب في معرفة أسماء الطلاب و أرقام غرفهم في الوحدة المعينة, يرجى كتابة رقم الوحدة و ضغط على هذا الزر.</string>
+        <string name="descBtnSave">بعد كتابة الحاجة أو الإقتراح أو إذا كان طالب غائب أو لا يريد شيئا حاليا, يرجى ضغط على هذ الزر.</string>
+        <string name="notNeed">لا يحتاج إلى إي شيء حاليا</string>
+        <string name="doneTitle">ممتاز</string>
+        <string name="doneDesc">تم حفظ نتيجة الزيارة بالنجاح</string>
+        <string name="resultErrorTitle">تنبيه</string>
+        <string name="resultErrorDesc">لم تدخل أية نتيجة</string>
+        <string name="resultErrorSpinner">ادخل رقم الوحدة و اختر اسم الطالب</string>
+        <string name="absent">غائب</string>
+        <string name="hintNeed">يرجى كتابة الحاجة أو الاقتراح</string>
+        <string name="hintUnit">رقم الوحدة. مثلا: 09</string>
+        <string name="tableStudName"> اسم الطالب</string>
+        <string name="tableAddress"> السكن</string>
+        <string name="resultNotRight">قم بادخل نتيجة الزيارة صحيحا</string>
+        <string name="noUnit">ادخل رقم الوحدة. مثلا: 01</string>
+</resources>

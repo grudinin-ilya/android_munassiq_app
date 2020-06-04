@@ -1,0 +1,144 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/line_pap"
+    android:orientation="vertical"
+    tools:context=".MainActivity">
+
+    <EditText
+        android:id="@+id/unit"
+        android:layout_width="160dp"
+        android:layout_height="50dp"
+        android:ems="10"
+        android:hint="@string/hintUnit"
+        android:inputType="number"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.200"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.065" />
+
+    <Spinner
+        android:id="@+id/spinner"
+        android:layout_width="270dp"
+        android:layout_height="50dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.750"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.190" />
+
+    <EditText
+        android:id="@+id/result"
+        android:layout_width="250dp"
+        android:layout_height="50dp"
+        android:ems="10"
+        android:hint="@string/hintNeed"
+        android:inputType="text"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.200"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.410" />
+
+    <ImageButton
+        android:id="@+id/imgBtnDo"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:background="@null"
+        android:scaleType="fitCenter"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.680"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.065"
+        app:srcCompat="@drawable/cogwheels" />
+
+    <ImageButton
+        android:id="@+id/imgBtnShow"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:background="@null"
+        android:scaleType="fitCenter"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.900"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.065"
+        app:srcCompat="@drawable/audit" />
+
+    <ImageButton
+        android:id="@+id/imgBtnSave"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:background="@null"
+        android:scaleType="fitCenter"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.900"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.410"
+        app:srcCompat="@drawable/yes" />
+
+    <RadioGroup
+        android:id="@+id/radios"
+        android:layout_width="350dp"
+        android:layout_height="50dp"
+        android:layoutDirection="rtl"
+        android:orientation="horizontal"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.500"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.280"
+        tools:ignore="MissingConstraints">
+
+        <RadioButton
+            android:id="@+id/radioButtonAbsent"
+            android:layout_width="84dp"
+            android:layout_height="match_parent"
+            android:text="@string/absent"
+            android:textSize="18sp"
+            tools:layout_editor_absoluteX="296dp"
+            tools:layout_editor_absoluteY="181dp" />
+
+        <RadioButton
+            android:id="@+id/radioButtonNotNead"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:text="@string/notNeed"
+            android:textSize="18sp"
+            tools:layout_editor_absoluteX="30dp"
+            tools:layout_editor_absoluteY="181dp" />
+    </RadioGroup>
+
+    <androidx.viewpager.widget.ViewPager
+        android:id="@+id/viewPager"
+        android:layout_width="match_parent"
+        android:layout_height="360dp"
+        android:layout_marginTop="42dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/result" />
+
+    <androidx.constraintlayout.widget.Barrier
+        android:id="@+id/barrier"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:barrierDirection="top"
+        app:constraint_referenced_ids="viewPager"
+        tools:layout_editor_absoluteY="731dp" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
